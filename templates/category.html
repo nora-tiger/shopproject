@@ -57,7 +57,7 @@
     <div class="row mx_auto">
         {% for product in products.object_list %}
         <div class="my_bottom_margin col-9 col-sm-12 col-md-4 xol-lg-4">
-            <div class="card text-center" style="min-width:18rem;">
+            <div class="card text-center" style="min-width:18rem; margin:15px;">
                 <a href="{{product.get_url}}">
                     {% if product.image %}
                     <img class="card-img-top my_image" src="{{product.image.url}}"alt="{{product.name}}"style="width :300px;height:300px;">
