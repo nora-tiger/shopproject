@@ -5,6 +5,11 @@ header {
   height: 100px; /* Adjust the height as per your needs */
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 .logo-image {
   display: block;
    width:80px;
@@ -28,6 +33,10 @@ body{
 .my_footer{
     background-color:#f8f9fa;
     height:60px;
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
 }
 .my_footer p{
     padding-top:20px;
@@ -41,9 +50,26 @@ body{
     font-size:12px;
 }
 .my_image{
-    width:100%;
-    height:auto;
+     height:600px; /* Make the image fill the height of the container */
+  width: 1250px; /* Allow the width to adjust automatically */
+  display: block; /* Remove any extra spacing */
+  margin: 0 auto;
+    /*height:450px;*/
+
 }
+.banner {
+  height: 600px; /* Set the desired height of the banner container */
+  width: 1250px; /* Allow the width to adjust automatically */
+  overflow: hidden; /* Hide any image overflow */
+}
+
+.banner img {
+  height: 600px; /* Make the image fill the height of the container */
+  width: 1250px; /* Allow the width to adjust automatically */
+  display: block; /* Remove any extra spacing */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
 .my_title{
     font-size:16px;
     text-transform:uppercase;
@@ -103,11 +129,3 @@ body{
 .my_custom_button{
     margin-top:5px;
 }
-
-
-
-
-
-
-
-
